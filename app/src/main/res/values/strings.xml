@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Rainbow Six Siege - LFG</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="title_activity_settings_screen">SettingsScreen</string>
+    <string-array name = "platforms">
+        <item>PS4</item>
+        <item>PC</item>
+        <item>XBOX ONE</item>
+    </string-array>
+    <string-array name="ranks">
+        <item>Diamond</item>
+        <item>Platinum I</item>
+        <item>Platinum II</item>
+        <item>Platinum III</item>
+        <item>Gold I</item>
+        <item>Gold II</item>
+        <item>Gold III</item>
+        <item>Gold IV</item>
+        <item>Silver I</item>
+        <item>Silver II</item>
+        <item>Silver III</item>
+        <item>Silver IV</item>
+        <item>Bronze I</item>
+        <item>Bronze II</item>
+        <item>Bronze III</item>
+        <item>Bronze IV</item>
+        <item>Copper I</item>
+        <item>Copper II</item>
+        <item>Copper III</item>
+        <item>Copper IV</item>
+    </string-array>
+</resources>

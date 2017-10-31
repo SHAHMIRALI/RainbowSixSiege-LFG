@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "916250870983",
+    "firebase_url": "https://rainbowsixsiegelfg.firebaseio.com",
+    "project_id": "rainbowsixsiegelfg",
+    "storage_bucket": "rainbowsixsiegelfg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916250870983:android:faa7ed739631be55",
+        "android_client_info": {
+          "package_name": "com.example.pc.rainbowsixsiege_lfg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916250870983-8noil5394bv4jp1e3moqmjrrijrfp3q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP6SjYsJKe6iBOpipwJcqxD0f7Lf_D_18"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

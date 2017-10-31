@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/listbg"
+    tools:context="com.example.pc.rainbowsixsiege_lfg.MakePostScreen">
+
+
+    <TextView
+        android:id="@+id/winLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="W/L: N/A" />
+
+    <TextView
+        android:id="@+id/killDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:text="K/D: N/A" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getInfo"
+        android:text="Fetch Stats"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IGN:"
+        android:layout_alignBottom="@+id/ignInput"
+        android:layout_alignStart="@+id/textView5"
+    />
+
+    <EditText
+        android:id="@+id/ignInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_centerVertical="true"
+        android:maxLength="15"
+        android:layout_alignStart="@+id/ranksSpinner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank:"
+        android:layout_alignBottom="@+id/ranksSpinner"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platform:"
+        android:layout_alignBottom="@+id/platformsSpinner"
+        android:layout_alignStart="@+id/postTextfield" />
+
+    <Spinner
+        android:id="@+id/ranksSpinner"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:entries="@array/ranks"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/platformsSpinner"
+        android:layout_alignStart="@+id/platformsSpinner" />
+
+    <Spinner
+        android:id="@+id/platformsSpinner"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:entries="@array/platforms"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/postTextfield"
+        android:layout_alignEnd="@+id/postButton" />
+
+    <EditText
+        android:id="@+id/postTextfield"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:hint="Write post..."
+        android:maxLength="54"
+        android:inputType="textMultiLine|textPersonName" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:onClick="clickPostButton"
+        android:text="Post" />
+
+    <CheckBox
+        android:id="@+id/rankedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/killDeath"
+        android:layout_marginBottom="31dp"
+        android:layout_toStartOf="@+id/killDeath"
+        android:checked="true"
+        android:onClick="rankedBoxClicked"
+        android:text="Ranked" />
+
+    <CheckBox
+        android:id="@+id/casualBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ignInput"
+        android:layout_alignTop="@+id/rankedBox"
+        android:onClick="casualBoxClicked"
+        android:text="Casual" />
+
+</android.widget.RelativeLayout>
